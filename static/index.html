@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <meta charset="utf-8">
 <title>ShareDB Textarea</title>
 <style>
@@ -6,11 +5,7 @@ body {
   background: #ddd;
 }
 #container {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  bottom: 24px;
-  left: 24px;
+
 }
 textarea {
   font: 14px/1.3 sans-serif;
@@ -20,9 +15,17 @@ textarea {
   box-sizing: border-box;
 }
 </style>
-
-<div id="container">
-  <textarea autofocus></textarea>
-</div>
-
+<body>
+    <header>
+        <h1>Text update</h1>
+    </header>
+    <article>
+        <section id="container">
+          <textarea id="currenttextarea" autofocus></textarea>
+        </section>
+    </article>
+<footer>
+    Current available projects: [fed]
+</footer>
+</body>
 <script src="dist/bundle.js"></script>
