@@ -3,8 +3,12 @@ var express = require('express');
 var ShareDB = require('sharedb');
 var WebSocket = require('ws');
 var WebSocketJSONStream = require('websocket-json-stream');
+var mongodb = require('mongodb');
+var db = require('sharedb-mongo')({mongo: function(callback) {
+  mongodb.connect('mongodb://localhost:27017/test', callback);
+}});
+var backend = new ShareDB({db});
 
-var backend = new ShareDB();
 createDoc(startServer);
 
 // Create initial document then fire callback
