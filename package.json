@@ -1,0 +1,35 @@
+{
+  "name": "sharedb-tests",
+  "version": "1.0.0",
+  "description": "tests for sharedb",
+  "main": "server.js",
+"scripts": {
+    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify client.js -o static/dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "sharedb": "^1.0.0-beta",
+    "sharedb-string-binding": "^1.0.0",
+    "websocket-json-stream": "^0.0.1",
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilhighley/sharedb-tests.git"
+  },
+  "keywords": [
+    "sharedb",
+    "test"
+  ],
+  "author": "neil highley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilhighley/sharedb-tests/issues"
+  },
+  "homepage": "https://github.com/neilhighley/sharedb-tests#readme"
+}
